@@ -1,16 +1,13 @@
 [build-system]
-requires = ["hatchling", "hatch-vcs"]
+requires = ["hatchling"]
 build-backend = "hatchling.build"
-
-[tool.hatch.version]
-source = "vcs"
 
 [tool.hatch.build.targets.wheel]
 include = ["colpali_engine"]
 
 [project]
 name = "colpali_engine"
-dynamic = ["version"]
+version = "0.400.0"
 description = "The code used to train and run inference with the ColPali architecture."
 authors = [
     { name = "Manuel Faysse", email = "manuel.faysse@illuin.tech" },
